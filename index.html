@@ -49,6 +49,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
     <style>
       @keyframes fade-in-left {
         0% {
@@ -82,9 +86,9 @@
             <div class="home-container01">
               <div data-thq="thq-navbar-nav" class="home-desktop-menu">
                 <nav class="home-links">
-                  <span>Home</span>
-                  <span class="home-nav2">About</span>
-                  <span class="home-nav3">Services</span>
+                  <a href="index.html">Home</a>
+                  <a href="#about" class="home-nav2">About</a>
+                  <a href="services.html" class="home-nav3">Services</a>
                   <span class="home-nav4">Products</span>
                   <span class="home-nav5">Contact</span>
                 </nav>
@@ -103,14 +107,22 @@
             <div data-thq="thq-mobile-menu" class="home-mobile-menu">
               <div class="home-nav">
                 <div class="home-top">
-                  <span class="home-logo">TECHSOL</span>
-                  <div data-thq="thq-close-menu" class="home-close-menu">
-                    <svg viewBox="0 0 1024 1024" class="home-icon02">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
+                  <div class="home-container02">
+                    <div
+                      data-thq="thq-close-menu"
+                      class="home-close-menu"
+                    ></div>
+                    <img
+                      alt="image"
+                      src="public/horizontal%20v2%20180px.svg"
+                      class="home-image1"
+                    />
                   </div>
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
                 </div>
                 <nav class="home-links1">
                   <span class="home-nav11">Home</span>
@@ -119,10 +131,6 @@
                   <span class="home-nav41">Products</span>
                   <span class="home-nav51">Contact</span>
                 </nav>
-                <div class="home-buttons">
-                  <button class="home-login button">Login</button>
-                  <button class="home-register button">Register</button>
-                </div>
               </div>
               <div>
                 <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
@@ -142,27 +150,79 @@
             </div>
           </header>
         </div>
-        <div class="home-hero">
-          <div class="home-hero1">
-            <div class="home-container02">
-              <h1 class="home-hero-heading heading1">
-                Technological Solutions
-              </h1>
-              <span class="home-hero-sub-heading">
-                Empowering businesses with innovative solutions
-              </span>
-              <div class="home-btn-group">
-                <button class="home-hero-button1 button">Get Started</button>
-                <button class="home-hero-button2 button">
-                  Learn More&nbsp;→
-                </button>
+        <div
+          data-thq="slider"
+          data-loop="true"
+          data-autoplay="true"
+          data-navigation="false"
+          data-pagination="true"
+          data-disable-autoplay-on-interaction="true"
+          class="home-slider swiper"
+        >
+          <div
+            data-thq="slider-wrapper"
+            class="home-slider-wrapper swiper-wrapper"
+          >
+            <div data-thq="slider-slide" class="home-slider-slide swiper-slide">
+              <div class="home-hero">
+                <div class="home-hero1">
+                  <div class="home-container03">
+                    <h1 class="home-hero-heading heading1">
+                      Technological Solutions
+                    </h1>
+                    <span class="home-hero-sub-heading">
+                      Empowering businesses with innovative solutions
+                    </span>
+                    <div class="home-btn-group">
+                      <button class="home-hero-button1 button">
+                        Get Started
+                      </button>
+                      <button class="home-hero-button2 button">
+                        Learn More&nbsp;→
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div
+              data-thq="slider-slide"
+              class="home-slider-slide1 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              class="home-slider-slide2 swiper-slide"
+            ></div>
           </div>
+          <div
+            data-thq="slider-pagination"
+            class="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+          >
+            <div
+              data-thq="slider-pagination-bullet"
+              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+            ></div>
+            <div
+              data-thq="slider-pagination-bullet"
+              class="swiper-pagination-bullet"
+            ></div>
+            <div
+              data-thq="slider-pagination-bullet"
+              class="swiper-pagination-bullet"
+            ></div>
+          </div>
+          <div
+            data-thq="slider-button-prev"
+            class="home-slider-button-prev swiper-button-prev"
+          ></div>
+          <div
+            data-thq="slider-button-next"
+            class="home-slider-button-next swiper-button-next"
+          ></div>
         </div>
         <div class="home-details">
-          <div class="home-details1">
-            <div class="home-container03">
+          <div id="about" class="home-details1">
+            <div class="home-container04">
               <span class="home-text sectionTitle">
                 <span>Details</span>
                 <br />
@@ -170,20 +230,20 @@
               <h2 class="home-details-heading heading2">About Our Company</h2>
               <span class="home-details-sub-heading">
                 We are a technological solutions startup company committed to
-                empowering companys and individuals by providing them services
+                empowering companies and individuals by providing them services
                 and expert solutions in a thriving technological world. Our
                 services vary from software development, cloud services, IT
                 Solutions, and more.&nbsp;
               </span>
             </div>
-            <div class="home-container04">
-              <div class="home-container05">
-                <div class="home-container06">
-                  <div class="home-container07">
+            <div class="home-container05">
+              <div class="home-container06">
+                <div class="home-container07">
+                  <div class="home-container08">
                     <img
                       alt="image"
                       src="public/32x32.svg"
-                      class="home-image1"
+                      class="home-image2"
                     />
                     <lottie-player
                       src="https://lottie.host/72d4624e-a653-4194-912e-a6f7275c964f/RqsOm8utdd.json"
@@ -199,14 +259,12 @@
             </div>
           </div>
         </div>
-        <div class="home-features"></div>
-        <div class="home-pricing"></div>
         <div class="home-gallery">
           <div class="home-gallery1">
             <h1 class="home-gallery-heading heading2">
               Our Technological Solutions in a Glance
             </h1>
-            <div class="home-container08">
+            <div class="home-container09">
               <lottie-player
                 src="https://lottie.host/41719c99-d3e2-4402-8bc5-005023e57007/vHJ5o3cAAz.json"
                 loop=""
@@ -243,13 +301,13 @@
               Discover our comprehensive range of technological solutions
               tailored to meet your business needs.
             </span>
-            <a href="page.html" class="home-banner-button button">Read More</a>
+            <button class="home-banner-button button">Read More</button>
           </div>
         </div>
         <div class="home-faq">
           <div class="home-faq-container">
             <div class="home-faq1">
-              <div class="home-container09">
+              <div class="home-container10">
                 <span class="home-text03 sectionTitle">
                   <span>FAQ</span>
                   <br />
@@ -282,7 +340,7 @@
                   </span>
                 </span>
               </div>
-              <div class="home-container10">
+              <div class="home-container11">
                 <div class="question-container">
                   <span class="question-text heading4">
                     <span>What services does the company offer?</span>
@@ -330,18 +388,6 @@
                     </span>
                   </span>
                 </div>
-                <div class="question-container">
-                  <span class="question-text heading4">
-                    <span>How experienced is your team?</span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      Our team consists of highly skilled professionals with
-                      years of experience in the technology industry. We have a
-                      proven track record of delivering successful projects.
-                    </span>
-                  </span>
-                </div>
               </div>
             </div>
           </div>
@@ -351,9 +397,9 @@
             <img
               alt="image"
               src="public/horizontal%20v2%20180px1.svg"
-              class="home-image2"
+              class="home-image3"
             />
-            <div class="home-container11">
+            <div class="home-container12">
               <nav class="home-nav1">
                 <span class="home-nav12">Home</span>
                 <span class="home-nav22">About</span>
@@ -363,7 +409,7 @@
               </nav>
             </div>
             <div class="home-separator"></div>
-            <div class="home-container12">
+            <div class="home-container13">
               <span class="home-text24">
                 © 2023 AletheiaIno All Rights Reserved.
               </span>
