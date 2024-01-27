@@ -296,7 +296,7 @@
 .services-text {
   color: var(--dl-color-gray-700);
   width: 70%;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-style: normal;
   text-align: center;
   font-weight: 400;
@@ -1062,10 +1062,22 @@
   .services-icon02 {
     fill: var(--dl-color-gray-900);
   }
+  .services-gallery {
+    height: 1726px;
+  }
   .services-gallery1 {
+    height: 1700px;
     padding: var(--dl-space-space-unit);
   }
+  .services-text {
+    color: var(--dl-color-gray-700);
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
   .services-features {
+    height: 512px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -1075,9 +1087,11 @@
     grid-template-columns: 1fr;
   }
   .services-steps {
+    height: 971px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
+    flex-direction: column;
     padding-bottom: var(--dl-space-space-twounits);
   }
   .services-container04 {
