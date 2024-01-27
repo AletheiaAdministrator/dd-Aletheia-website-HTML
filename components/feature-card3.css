@@ -1,14 +1,14 @@
 .feature-card3-feature-card {
   width: 100%;
+  height: 388px;
   display: flex;
   padding: var(--dl-space-space-twounits);
   align-items: center;
   flex-direction: column;
 }
-.feature-card3-icon {
-  fill: var(--dl-color-gray-500);
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
+.feature-card3-lottie-node {
+  width: 170px;
+  height: 173px;
 }
 .feature-card3-text {
   font-style: normal;
@@ -23,10 +23,10 @@
 }
 .feature-card3-text2 {
   font-size: 0.75rem;
+  align-self: center;
   margin-top: var(--dl-space-space-unit);
   font-weight: 500;
 }
-
 
 
 
